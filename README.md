@@ -5,12 +5,13 @@ Developed by _**Rhein Sullivan**_ as part of _Mobile Development 2025 with UKM L
 
 ## ✨ Key Features
 
-- **🔐 PIN Authentication**: Protects your notes with a PIN system
-- **📝 Note Management**: Create, edit, and delete notes easily
-- **💾 Local Storage**: All data is stored securely on the device using SQLite
-- **📱 User-Friendly Interface**: Clean and simple UI for easy use
-- **🔄 Real-time Updates**: Notes update instantly after changes
-- **📅 Timestamp**: Each note has creation and update time
+- **🔐 PIN Authentication**: Protects your notes with a PIN system  
+- **📝 Note Management**: Create, edit, and delete notes easily  
+- **💾 Local Storage**: All data is stored securely on the device using SQLite  
+- **📱 User-Friendly Interface**: Clean and simple UI for easy use  
+- **🌗 Dark/Light Mode**: Supports system theme for better user experience  
+- **🔄 Real-time Updates**: Notes update instantly after changes  
+- **📅 Timestamp**: Each note has creation and update time  
 
 ## 🛠️ Tech Stack
 
