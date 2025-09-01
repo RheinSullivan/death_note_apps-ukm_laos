@@ -53,7 +53,7 @@ dependencies:
 
 ### 4. View Note Detail
 <p align="center">
-  <img src="screenshots/detail_screen.png" alt="View Note Detail" width="200"/>
+  <img src="screenshots/view_screen.png" alt="View Note Detail" width="200"/>
 </p>
 
 ### 5. Edit Note Form
