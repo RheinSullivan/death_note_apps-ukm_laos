@@ -36,19 +36,29 @@ dependencies:
 ## 📱 Screenshots
 
 ### 1. PIN Login Screen
-![PIN Login](screenshots/pin_screen.png)
+<p align="center">
+  <img src="screenshots/pin_screen.png" alt="PIN Login" width="200"/>
+</p>
 
 ### 2. Home Notes Screen
-![Home Screen](screenshots/home_screen.png)
+<p align="center">
+  <img src="screenshots/home_screen.png" alt="Home Screen" width="200"/>
+</p>
 
 ### 3. Add Note Screen
-![Add Note](screenshots/add_screen.png)
+<p align="center">
+  <img src="screenshots/add_screen.png" alt="Add Note" width="200"/>
+</p>
 
 ### 4. Edit Note Screen
-![Edit Note](screenshots/edit_screen.png)
+<p align="center">
+  <img src="screenshots/edit_screen.png" alt="Edit Note" width="200"/>
+</p>
 
 ### 5. Logout PIN Screen
-![Logout PIN](screenshots/logout_screen.png)
+<p align="center">
+  <img src="screenshots/logout_screen.png" alt="Logout PIN" width="200"/>
+</p>
 
 ---
 
@@ -202,8 +212,8 @@ This project is developed for educational and learning purposes.
 
 ## 👨‍💻 Developer
 
-Developed with ❤️ by **Rhein Sullivan**  
-Pelatihan: _Mobile Development 2025 with UKM LAOS_  
+Developed with ❤️ by _**Rhein Sullivan**_  
+Training: _Mobile Development 2025 with UKM LAOS_  
 Repository: [Death Note Apps](https://github.com/RheinSullivan/death_note_apps-ukm_laos)
 
 ---
