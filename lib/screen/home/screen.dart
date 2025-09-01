@@ -4,6 +4,7 @@ import 'package:deathnote_apps/screen/pin/screen.dart';
 import 'package:flutter/material.dart';
 import 'package:deathnote_apps/data/database_local.dart';
 import 'package:deathnote_apps/main.dart';
+import 'package:deathnote_apps/screen/view/screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -111,64 +112,6 @@ class _HomeScreenState extends State<HomeScreen> {
                 foregroundColor: Colors.white,
               ),
               child: const Text('Delete'),
-            ),
-          ],
-        );
-      },
-    );
-  }
-
-  void editNote(Note note) {
-    final titleController = TextEditingController(text: note.title);
-    final contentController = TextEditingController(text: note.content);
-    showDialog(
-      context: context,
-      builder: (dialogContext) {
-        return AlertDialog(
-          title: const Text('Edit Note'),
-          content: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              TextField(
-                controller: titleController,
-                decoration: const InputDecoration(labelText: 'Title'),
-              ),
-              TextField(
-                controller: contentController,
-                decoration: const InputDecoration(
-                    labelText: 'Fill in the death certificate'),
-                maxLines: 5,
-              ),
-            ],
-          ),
-          actions: [
-            TextButton(
-              onPressed: () {
-                Navigator.of(dialogContext).pop();
-              },
-              style: TextButton.styleFrom(
-                backgroundColor: Colors.red,
-                foregroundColor: Colors.white,
-              ),
-              child: const Text('Cancel'),
-            ),
-            ElevatedButton(
-              onPressed: () async {
-                final updatedNote = note.copyWith(
-                  title: titleController.text,
-                  content: contentController.text,
-                  updatedAt: DateTime.now(),
-                );
-                await DatabaseLocal().updateNote(updatedNote);
-                await getAllNotes();
-                if (!dialogContext.mounted) return;
-                Navigator.of(dialogContext).pop();
-              },
-              style: TextButton.styleFrom(
-                backgroundColor: Colors.green,
-                foregroundColor: Colors.white,
-              ),
-              child: const Text('Save'),
             ),
           ],
         );
@@ -285,8 +228,15 @@ class _HomeScreenState extends State<HomeScreen> {
                       },
                       icon: const Icon(Icons.delete, color: Colors.redAccent),
                     ),
-                    onTap: () {
-                      editNote(note);
+                    onTap: () async {
+                      final updatedNote = await Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => ViewScreen(note: note),
+                        ),
+                      );
+                      if (updatedNote != null) {
+                        await getAllNotes();
+                      }
                     },
                   ),
                 );
