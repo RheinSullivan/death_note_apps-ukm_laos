@@ -46,17 +46,22 @@ dependencies:
   <img src="screenshots/home_screen.png" alt="Home Screen" width="200"/>
 </p>
 
-### 3. Add Note Screen
+### 3. Add Note Form
 <p align="center">
-  <img src="screenshots/add_screen.png" alt="Add Note" width="200"/>
+  <img src="screenshots/add_screen.png" alt="Add Note Form" width="200"/>
 </p>
 
-### 4. Edit Note Screen
+### 4. View Note Detail
 <p align="center">
-  <img src="screenshots/edit_screen.png" alt="Edit Note" width="200"/>
+  <img src="screenshots/detail_screen.png" alt="View Note Detail" width="200"/>
 </p>
 
-### 5. Logout PIN Screen
+### 5. Edit Note Form
+<p align="center">
+  <img src="screenshots/edit_screen.png" alt="Edit Note Form" width="200"/>
+</p>
+
+### 6. Logout PIN Screen
 <p align="center">
   <img src="screenshots/logout_screen.png" alt="Logout PIN" width="200"/>
 </p>
