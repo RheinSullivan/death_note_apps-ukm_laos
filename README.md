@@ -1,7 +1,7 @@
 # Death Note Apps 💀📖
 
 A secure personal notes application protected with PIN authentication to keep your notes private.  
-Developed by **Rhein Sullivan** as part of _Mobile Development 2025 with UKM LAOS_.
+Developed by _**Rhein Sullivan**_ as part of _Mobile Development 2025 with UKM LAOS_.
 
 ## ✨ Key Features
 
